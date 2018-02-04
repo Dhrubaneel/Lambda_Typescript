@@ -1,0 +1,7 @@
+node_modules
+logs
+typings
+dist
+*.log
+src/**/*.js
+src/**/*.js.map
