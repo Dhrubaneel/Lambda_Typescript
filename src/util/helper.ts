@@ -1,21 +1,21 @@
 import  * as types from "../common/types"
 
 class Helper{
-    dimentions:types.geomatricFigure;
+    dimensions:types.geometricFigure;
 
-    constructor( inputDimention:types.geomatricFigure ){
-        this.dimentions = inputDimention;
+    constructor( inputDimension:types.geometricFigure ){
+        this.dimensions = inputDimension;
     }
 
     public area(): number {
         let result:number;
-        result = this.dimentions.height * this.dimentions.width;
+        result = this.dimensions.height * this.dimensions.width;
         return result;
     }
 
     public perimeter(): number {
         let result:number;
-        result = 2*(this.dimentions.height + this.dimentions.width);
+        result = 2*(this.dimensions.height + this.dimensions.width);
         return result;
     }
 }

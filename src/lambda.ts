@@ -5,13 +5,13 @@ import {Helper} from "./util/helper";
 
 const handler: Handler = (event:any , context:Context, callback:Callback)=>{
 
-    let dimentions = <types.geomatricFigure>{};
-    let result =  <types.dimentionResult>{};
+    let dimensions = <types.geometricFigure>{};
+    let result =  <types.dimensionResult>{};
 
-    dimentions.height = event.height;
-    dimentions.width = event.width;
+    dimensions.height = event.height;
+    dimensions.width = event.width;
 
-    let helper = new Helper(dimentions);
+    let helper = new Helper(dimensions);
 
     result.area = helper.area();
     result.perimeter = helper.perimeter();

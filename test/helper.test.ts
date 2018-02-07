@@ -7,12 +7,12 @@ import * as types from '../src/common/types';
 describe("helper.ts testcases",()=>{
     describe("area function",()=>{
         it("area()",()=>{
-            var dimention = <types.geomatricFigure>{};
+            var dimension = <types.geometricFigure>{};
 
-            dimention.width = 5;
-            dimention.height = 4;
+            dimension.width = 5;
+            dimension.height = 4;
 
-            let helper = new Helper(dimention);
+            let helper = new Helper(dimension);
 
             let result = helper.area();
 
@@ -21,12 +21,12 @@ describe("helper.ts testcases",()=>{
     });
     describe("perimeter function",()=>{
         it("perimeter()",()=>{
-            var dimention = <types.geomatricFigure>{};
+            var dimension = <types.geometricFigure>{};
 
-            dimention.width = 5;
-            dimention.height = 4;
+            dimension.width = 5;
+            dimension.height = 4;
 
-            let helper = new Helper(dimention);
+            let helper = new Helper(dimension);
 
             let result = helper.perimeter();
 

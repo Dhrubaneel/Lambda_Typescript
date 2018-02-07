@@ -1,9 +1,9 @@
-export type geomatricFigure = {
+export type geometricFigure = {
     width: number;
     height: number;
 }
 
-export type dimentionResult = {
+export type dimensionResult = {
     area: number;
     perimeter: number;
 }
