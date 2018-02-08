@@ -28,7 +28,11 @@ npm run test
 References
 ---------- 
 https://code.visualstudio.com/docs/languages/typescript
+
 https://medium.com/@dupski/debug-typescript-in-vs-code-without-compiling-using-ts-node-9d1f4f9a94a
+
 https://blog.shovonhasan.com/deploying-a-typescript-node-aws-lambda-function-with-serverless/
+
 https://journal.artfuldev.com/unit-testing-node-applications-with-typescript-using-mocha-and-chai-384ef05f32b2
+
 https://appdividend.com/2017/03/31/beginners-guide-to-setup-typescript-with-webpack/
