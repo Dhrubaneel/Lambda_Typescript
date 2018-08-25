@@ -10,6 +10,7 @@
   - [Prerequisite](#prerequisite)
   - [Run the application in Debug mode](#run-the-application-in-debug-mode)
   - [Run test Cases](#run-test-cases)
+  - [Create Readme](#create-readme)
 - [Synopsis](#synopsis)
 - [Code Documentation](#code-documentation)
   - [Classes](#classes)
@@ -42,7 +43,7 @@ Please use the same "launch.json" and "settings.json" files under .vscode folder
 
 Please Note, "sourcemap" option must be true in tsconfig.json as we are using "TS Node" module to use the vs code internal debugging tool to debug through typescript code.
 
-This project use jsdoc to create Readme file auto generated. All ts files need to have proper comments to have Readme file generated properly. Run the comment "npm run build:doc" before every commit to get the Readme file freshly regenerated. 
+This project use jsdoc to create Readme file auto generated. All ts files need to have proper comments to have Readme file generated properly. Run the comment "npm run build:doc" before every commit to get the Readme file freshly regenerated.  If any change is required in defination then README.hbs file needs to be modified.
 
 
 Run the application in Debug mode
@@ -53,6 +54,10 @@ press f5 key
 Run test Cases
 --------------
 npm run test
+
+Create Readme
+--------------
+npm run build:doc
 
 References
 ---------- 
