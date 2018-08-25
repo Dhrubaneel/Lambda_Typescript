@@ -43,7 +43,7 @@ Please use the same "launch.json" and "settings.json" files under .vscode folder
 
 Please Note, "sourcemap" option must be true in tsconfig.json as we are using "TS Node" module to use the vs code internal debugging tool to debug through typescript code.
 
-This project use jsdoc to create Readme file auto generated. All ts files need to have proper comments to have Readme file generated properly. Run the comment "npm run build:doc" before every commit to get the Readme file freshly regenerated.  If any change is required in defination then README.hbs file needs to be modified.
+This project use jsdoc to create Readme file auto generated. All ts files need to have proper comments to have Readme file generated properly. Run the comment "npm run build:doc" before every commit to get the Readme file freshly regenerated.  If any change is required in definition then README.hbs file needs to be modified.
 
 
 Run the application in Debug mode
