@@ -3,5 +3,5 @@ logs
 typings
 dist
 *.log
-src/**/*.js
-src/**/*.js.map
+*.js
+*.js.map

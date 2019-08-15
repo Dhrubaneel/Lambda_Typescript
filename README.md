@@ -11,6 +11,7 @@
   - [Run the application in Debug mode](#run-the-application-in-debug-mode)
   - [Run test Cases](#run-test-cases)
   - [Create Readme](#create-readme)
+  - [References](#references)
 - [Synopsis](#synopsis)
 - [Code Documentation](#code-documentation)
   - [Classes](#classes)
@@ -28,7 +29,9 @@
 
 # Description
 
-The target of this project is to create a simple Lambda function using Typescript. The codebase includes unit test cases with Mocha and Chai. Also VS Code Internal debugging tool will be used to run and debug the code through Typescript files.
+The target of this project is to create a simple Lambda function using Typescript. The codebase includes unit test cases
+with Mocha and Chai. Also VS Code Internal debugging tool will be used to run and debug the code through Typescript
+files.
 
 
 Prerequisite
@@ -39,16 +42,22 @@ Following software need to be installed in system.
 2) Git
 3) Node
 
-Please use the same "launch.json" and "settings.json" files under .vscode folder to get the codebase instantly working. It will also hide .js and .js.map files generated from .ts files to make the codebase look less cluttered.
+Please use the same "launch.json" and "settings.json" files under .vscode folder to get the codebase instantly working.
+It will also hide .js and .js.map files generated from .ts files to make the codebase look less cluttered.
 
-Please Note, "sourcemap" option must be true in tsconfig.json as we are using "TS Node" module to use the vs code internal debugging tool to debug through typescript code.
+Please Note, "sourcemap" option must be true in tsconfig.json as we are using "TS Node" module to use the vs code
+internal debugging tool to debug through typescript code.
 
-This project use jsdoc to create Readme file auto generated. All ts files need to have proper comments to have Readme file generated properly. Run the comment "npm run build:doc" before every commit to get the Readme file freshly regenerated.  If any change is required in definition then README.hbs file needs to be modified.
+This project use jsdoc to create Readme file auto generated. All ts files need to have proper comments to have Readme
+file generated properly. Run the comment "npm run build:doc" before every commit to get the Readme file freshly
+regenerated. If any change is required in definition then README.hbs file needs to be modified.
 
 
 Run the application in Debug mode
 ---------------------------------
-press f5 key
+Press f5 key. This will run VS Code in debug mode based on the configuration mentioned in launch.json. launch.json
+targets the file lambda-local which calls the actual handler with json from EVENT_EXAMPLE as lambda event.
+
 
 
 Run test Cases
@@ -60,7 +69,7 @@ Create Readme
 npm run build:doc
 
 References
----------- 
+----------
 https://code.visualstudio.com/docs/languages/typescript
 
 https://medium.com/@dupski/debug-typescript-in-vs-code-without-compiling-using-ts-node-9d1f4f9a94a

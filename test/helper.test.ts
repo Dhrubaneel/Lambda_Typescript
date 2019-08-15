@@ -1,12 +1,12 @@
 import 'mocha';
-import {expect} from 'chai';
+import { expect } from 'chai';
 
-import {Helper} from '../src/util/helper';
-import * as types from '../src/common/types';
+import { Helper } from '../src/util/helper';
+import * as types from '../src/common/model';
 
-describe("helper.ts testcases",()=>{
-    describe("area function",()=>{
-        it("area()",()=>{
+describe("helper.ts testcases", () => {
+    describe("area function", () => {
+        it("area()", () => {
             var dimension = <types.geometricFigure>{};
 
             dimension.width = 5;
@@ -19,8 +19,8 @@ describe("helper.ts testcases",()=>{
             expect(result).to.equal(20);
         })
     });
-    describe("perimeter function",()=>{
-        it("perimeter()",()=>{
+    describe("perimeter function", () => {
+        it("perimeter()", () => {
             var dimension = <types.geometricFigure>{};
 
             dimension.width = 5;

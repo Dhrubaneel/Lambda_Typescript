@@ -1,8 +1,8 @@
 //Main lambda handler
-import { Handler, Context, Callback} from 'aws-lambda';
+import { Handler, Context, Callback } from 'aws-lambda';
 
-import * as types from "./common/types";
-import {Helper} from "./util/helper";
+import * as types from "./common/model";
+import { Helper } from "./util/helper";
 
 /**
  * 
@@ -10,10 +10,10 @@ import {Helper} from "./util/helper";
  * @param context - Lambda context
  * @param callback -Lambda Callback
  */
-const handler: Handler = (event:any , context:Context, callback:Callback)=>{
+const handler: Handler = (event: any, context: Context, callback: any) => {
 
     let dimensions = <types.geometricFigure>{};
-    let result =  <types.dimensionResult>{};
+    let result = <types.dimensionResult>{};
 
     dimensions.height = event.height;
     dimensions.width = event.width;
@@ -23,7 +23,7 @@ const handler: Handler = (event:any , context:Context, callback:Callback)=>{
     result.area = helper.area();
     result.perimeter = helper.perimeter();
 
-    callback(null,result);
+    callback(null, result);
 };
 
 export { handler }

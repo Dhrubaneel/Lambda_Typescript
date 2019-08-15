@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\src\\lambda.ts",
+            "program": "${workspaceFolder}\\lambda-local.ts",
             "args": ["${relativeFile}"],
             "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
             "sourceMaps": true,
