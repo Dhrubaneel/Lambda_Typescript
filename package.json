@@ -24,7 +24,7 @@
     "aws-lambda": "^1.0.6",
     "babel-core": "^6.26.3",
     "chai": "^4.3.4",
-    "doctoc": "^2.0.0",
+    "doctoc": "^2.2.1",
     "jsdoc-babel": "^0.5.0",
     "jsdoc-to-markdown": "^7.0.1",
     "mocha": "^10.2.0",
